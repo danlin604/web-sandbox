@@ -1,0 +1,166 @@
+/* src/app.css */
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+html.dark {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+
+html.dark img,
+html.dark video,
+html.dark svg {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+@layer base {
+  /* Simplified tonal surfaces */
+  article {
+    @apply border border-gray-300 rounded-xl p-6;
+  }
+}
+
+@layer components {
+  /* ================================
+     BLOG CONTENT COMPONENTS
+     ================================ */
+  .blog-container {
+    @apply max-w-4xl mx-auto p-8;
+  }
+
+  .blog-prose {
+    @apply prose prose-lg prose-gray max-w-none;
+    @apply prose-headings:text-gray-900;
+    @apply prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline;
+    @apply prose-code:px-1 prose-code:rounded;
+    @apply prose-pre:bg-gray-900 prose-pre:text-gray-100;
+  }
+
+  .blog-footer {
+    @apply mt-12 pt-8 border-t border-gray-200;
+  }
+
+  .blog-tags-container {
+    @apply flex flex-wrap gap-2 mb-4;
+  }
+
+  .blog-tag {
+    @apply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm;
+  }
+
+  .blog-metadata {
+    @apply text-sm text-gray-600;
+  }
+
+  /* ================================
+     PAGE LAYOUT COMPONENTS
+     ================================ */
+  .page-header {
+    @apply mb-8;
+  }
+
+  .page-title {
+    @apply text-4xl font-bold text-gray-900 mb-2;
+  }
+
+  .page-subtitle {
+    @apply text-gray-600;
+  }
+
+  /* ================================
+     POST LIST COMPONENTS
+     ================================ */
+  .posts-list {
+    @apply space-y-8;
+  }
+
+  .post-card {
+    @apply border-b border-gray-200 pb-8;
+  }
+
+  .post-title-link {
+    @apply text-2xl font-semibold mb-3 text-gray-900 hover:text-blue-600 transition-colors;
+  }
+
+  .post-date-range {
+    @apply flex items-center gap-4 mb-4;
+  }
+
+  .post-excerpt {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+
+  /* ================================
+     INTERACTIVE COMPONENTS
+     ================================ */
+  .expand-button {
+    @apply mt-3 text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-1;
+  }
+
+  .expanded-content {
+    @apply mt-4 pt-4 border-t border-gray-100;
+  }
+
+  /* ================================
+     EMPTY STATE COMPONENTS
+     ================================ */
+  .empty-state {
+    @apply text-center py-12;
+  }
+
+  .empty-state-title {
+    @apply text-xl font-semibold text-gray-900 mb-2;
+  }
+
+  .empty-state-message {
+    @apply text-gray-600;
+  }
+}
+
+@layer components {
+  /* ================================
+     CONTENT EXPANSION COMPONENTS
+     ================================ */
+  .content-toggle {
+    @apply mt-3 text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1;
+    @apply inline-flex items-center gap-1;
+  }
+
+  .content-toggle-icon {
+    @apply transition-transform duration-200;
+  }
+
+  .content-toggle[aria-expanded="true"] .content-toggle-icon {
+    @apply rotate-180;
+  }
+
+  /* ================================
+     NAVIGATION LINK COMPONENTS
+     ================================ */
+  .read-more-link {
+    @apply text-blue-600 hover:text-blue-800 font-medium text-sm;
+    @apply inline-flex items-center gap-1 hover:gap-2 transition-all duration-200;
+    @apply underline-offset-2 hover:underline;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-1;
+  }
+
+  .read-more-arrow {
+    @apply transition-all duration-200;
+  }
+
+  /* ================================
+     CONTENT SECTIONS
+     ================================ */
+  .expandable-content {
+    @apply mt-4 pt-4 border-t border-gray-100;
+  }
+}

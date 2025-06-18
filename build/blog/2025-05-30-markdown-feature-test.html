@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta referrer="strict-origin-when-cross-origin" />
+    
+		<link href="../_app/immutable/assets/start.BV1wtAew.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.CtMGjZqV.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.DD0WBq_P.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CHam4a-z.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.rfqztpMy.js"><!--[--><meta name="description" content="A comprehensive test of all markdown features including headers, lists, code blocks, tables, and more"><!--]--><title>Complete Markdown Feature Test</title>
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><header class="header svelte-1709l28"><nav aria-label="Global" class="nav-container svelte-1709l28"><div class="nav-wrapper svelte-1709l28"><button class="mobile-menu-button sm:hidden svelte-1709l28" aria-expanded="false" aria-label="Toggle navigation"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><!--[!--><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path><!--]--></svg></button> <ul class="nav-list svelte-1709l28"><li><a class="nav-link svelte-1709l28" href="/">Home</a></li> <li><a class="nav-link svelte-1709l28" href="/about">About</a></li> <li><a class="nav-link svelte-1709l28" href="/blog">Blog</a></li> <li><a class="nav-link svelte-1709l28" href="/todos">TODOs</a></li> <li><a class="nav-link svelte-1709l28" href="/history">History</a></li></ul> <div class="theme-toggle-wrapper svelte-1709l28"><button class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300" aria-label="Toggle dark mode"><!--[!--><svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><!--]--></button><!----></div></div> <!--[!--><!--]--></nav></header> <section class="main-section svelte-1709l28"><main class="flex-1"><!----><div class="blog-container"><article class="blog-prose"><!----><h1>Complete Markdown Feature Test</h1> <p><em>Published on 2025-05-30 by Me</em></p> <p>This is a comprehensive test of all markdown features to ensure MDSvex is working properly.</p> <h2>Headers</h2> <h1>H1 Header</h1> <h2>H2 Header</h2> <h3>H3 Header</h3> <h4>H4 Header</h4> <h5>H5 Header</h5> <h6>H6 Header</h6> <h2>Text Formatting</h2> <p><strong>Bold text</strong> and <strong>also bold</strong></p> <p><em>Italic text</em> and <em>also italic</em></p> <p><strong><em>Bold and italic</em></strong> and <strong><em>also bold and italic</em></strong></p> <p><del>Strikethrough text</del></p> <p><code>Inline code</code></p> <h2>Lists</h2> <h3>Unordered Lists</h3> <ul><li>First item</li> <li>Second item <ul><li>Nested item</li> <li>Another nested item <ul><li>Deep nested item</li></ul></li></ul></li> <li>Third item</li></ul> <h3>Ordered Lists</h3> <ol><li>First ordered item</li> <li>Second ordered item <ol><li>Nested ordered item</li> <li>Another nested ordered item</li></ol></li> <li>Third ordered item</li></ol> <h3>Task Lists</h3> <ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked disabled> Completed task</li> <li class="task-list-item"><input type="checkbox" disabled> Incomplete task</li> <li class="task-list-item"><input type="checkbox" checked disabled> Another completed task</li> <li class="task-list-item"><input type="checkbox" disabled> Another incomplete task</li></ul> <h2>Links and Images</h2> <p><a href="https://svelte.dev" rel="nofollow">This is a link</a></p> <p><a href="https://kit.svelte.dev" title="SvelteKit Documentation" rel="nofollow">Link with title</a></p> <h2>Blockquotes</h2> <blockquote><p>This is a blockquote</p> <p>With multiple lines</p> <blockquote><p>And nested blockquotes</p> <blockquote><p>Even deeper nesting</p></blockquote></blockquote></blockquote> <h2>Code Blocks</h2> <h3>JavaScript</h3> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">greetUser</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>name<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">!</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">Welcome to the blog, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>name<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token string">'Developer'</span><span class="token punctuation">;</span>
+<span class="token function">greetUser</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span></code><!----></pre> <h3>TypeScript</h3> <pre class="language-typescript"><!----><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">BlogPost</span> <span class="token punctuation">&#123;</span>
+  title<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  date<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  excerpt<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  tags<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  slug<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> post<span class="token operator">:</span> BlogPost <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  title<span class="token operator">:</span> <span class="token string">'My Blog Post'</span><span class="token punctuation">,</span>
+  date<span class="token operator">:</span> <span class="token string">'2025-05-30'</span><span class="token punctuation">,</span>
+  excerpt<span class="token operator">:</span> <span class="token string">'This is a test post'</span><span class="token punctuation">,</span>
+  tags<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'test'</span><span class="token punctuation">,</span> <span class="token string">'markdown'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  slug<span class="token operator">:</span> <span class="token string">'test-post'</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!----></pre> <h3>CSS</h3> <pre class="language-css"><!----><code class="language-css"><span class="token selector">.blog-post</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">max-width</span><span class="token punctuation">:</span> 800px<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Inter'</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">.blog-post h1</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #1a202c<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.5rem<span class="token punctuation">;</span>
+  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <h3>Svelte Component</h3> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    count <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>increment<span class="token punctuation">&#125;</span></span><span class="token punctuation">></span></span>
+  Count: <span class="token language-javascript"><span class="token punctuation">&#123;</span>count<span class="token punctuation">&#125;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">button</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #ff3e00<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0.5rem 1rem<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0.25rem<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code><!----></pre> <h2>Tables</h2> <table><thead><tr><th>Feature</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td>Headers</td><td>✅ Working</td><td>All levels supported</td></tr><tr><td>Lists</td><td>✅ Working</td><td>Ordered, unordered, nested</td></tr><tr><td>Code blocks</td><td>✅ Working</td><td>Syntax highlighting</td></tr><tr><td>Tables</td><td>✅ Working</td><td>This table!</td></tr><tr><td>Links</td><td>✅ Working</td><td>Internal and external</td></tr><tr><td>Images</td><td>⚠️ Testing</td><td>Need to test images</td></tr></tbody></table> <h3>Table with Alignment</h3> <table><thead><tr><th align="left">Left Aligned</th><th align="center">Center Aligned</th><th align="right">Right Aligned</th></tr></thead><tbody><tr><td align="left">Left</td><td align="center">Center</td><td align="right">Right</td></tr><tr><td align="left">This is</td><td align="center">some test</td><td align="right">content</td></tr><tr><td align="left">to verify</td><td align="center">table</td><td align="right">alignment</td></tr></tbody></table> <h2>Horizontal Rules</h2> <hr> <h2>Math (if supported)</h2> <p>Inline math: <code>$E = mc^2$</code></p> <p>Block math:</p> <pre class="language-undefined"><!----><code class="language-undefined">$$
+sum_&#123;i=1&#125;^&#123;n&#125; x_i = x_1 + x_2 + cdots + x_n
+$$</code><!----></pre> <h2>Special Characters</h2> <ul><li>En dash: –</li> <li>Em dash: —</li> <li>Ellipsis: …</li> <li>Copyright: ©</li> <li>Trademark: ™</li> <li>Registered: ®</li></ul> <h2>Escape Characters</h2> <p>*This is not italic*</p> <p>`This is not code`</p> <p># This is not a header</p> <h2>Line Breaks</h2> <p>This is a line with two spaces at the end
+This should be on a new line</p> <p>This is a paragraph with a hard break.</p> <p>This is a new paragraph.</p> <h2>Footnotes (if supported)</h2> <p>This text has a footnote[^1].</p> <p>This text has another footnote[^note].</p> <p>[^1]: This is the first footnote.</p> <p>[^note]: This is a named footnote.</p> <h2>Emoji (if supported)</h2> <p>:rocket: :heart: :tada: :computer: :coffee:</p> <h2>Definition Lists (if supported)</h2> <p>Term 1
+: Definition for term 1</p> <p>Term 2
+: Definition for term 2
+: Another definition for term 2</p> <h2>Abbreviations (if supported)</h2> <p><em>[HTML]: Hyper Text Markup Language</em>[CSS]: Cascading Style Sheets</p> <p>The HTML and CSS specifications are maintained by W3C.</p> <h2>Conclusion</h2> <p>This comprehensive test covers most standard markdown features. If you can see all these elements rendered properly, your MDSvex setup is working correctly!</p> <hr><!----> <div class="blog-footer"><div class="blog-tags-container"><!--[--><span class="blog-tag">markdown</span><span class="blog-tag">test</span><span class="blog-tag">mdsvex</span><span class="blog-tag">documentation</span><!--]--></div> <div class="blog-metadata"><p>Published on May 29, 2025</p> <!--[--><p>By Me</p><!--]--></div></div></article></div><!----><!----></main> <footer class="footer svelte-1709l28"><div class="footer-content svelte-1709l28"><p class="footer-text svelte-1709l28">© 2025 Me</p></div></footer></section><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1gzruoq = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CtMGjZqV.js"),
+						import("../_app/immutable/entry/app.DD0WBq_P.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

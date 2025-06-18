@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: /
+
+# Explicitly block all major search engines
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# Prevent archive.org from archiving the site
+User-agent: ia_archiver
+Disallow: /
+
+# Additional directive to discourage indexing
+Noindex: /
