@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
+import type { PageLoad } from './$types.js';
 
 export const prerender = true;
 
@@ -7,7 +7,6 @@ export const load: PageLoad = async ({ params }) => {
   const { slug } = params;
 
   try {
-    // Get all markdown files from the content/blog directory
     const allPostFiles = import.meta.glob('../../../content/blog/*.md');
 
     // Iterate through all files to find matching post

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { PageData } from './$types';
+  import { base } from '$app/paths';
 
   export let data: PageData;
 
@@ -24,7 +25,7 @@
       {#each posts as post}
         <article class="post-card">
           <h2 class="post-title-link">
-            <a href="/blog/{post.slug}">
+            <a href="{base}/blog/{post.slug}">
               {post.title}
             </a>
           </h2>
@@ -54,7 +55,7 @@
             </div>
 
             <a
-              href="/blog/{post.slug}"
+              href="{base}/blog/{post.slug}"
               class="read-more-link"
               aria-label="Read complete article: {post.title}"
             >

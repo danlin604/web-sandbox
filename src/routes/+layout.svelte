@@ -2,6 +2,7 @@
 <script lang="ts">
   import '../app.css';
   import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+  import { base } from '$app/paths'
 
   let { children } = $props();
   let mobileMenuOpen = $state(false);
@@ -11,56 +12,56 @@
   }
 </script>
 
-<header class="header">
-  <nav aria-label="Global" class="nav-container">
-    <div class="nav-wrapper">
-      <!-- Mobile hamburger button -->
-      <button
-        class="mobile-menu-button sm:hidden"
-        onclick={toggleMobileMenu}
-        aria-expanded={mobileMenuOpen}
-        aria-label="Toggle navigation"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          {#if mobileMenuOpen}
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          {:else}
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          {/if}
-        </svg>
-      </button>
-
-      <!-- Desktop Navigation Links -->
-      <ul class="nav-list">
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/about">About</a></li>
-        <li><a class="nav-link" href="/blog">Blog</a></li>
-        <li><a class="nav-link" href="/todos">TODOs</a></li>
-        <li><a class="nav-link" href="/history">History</a></li>
-      </ul>
-
-      <!-- Theme Toggle -->
-      <div class="theme-toggle-wrapper">
-        <ThemeToggle />
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Menu -->
-    {#if mobileMenuOpen}
-      <div class="mobile-nav">
-        <ul class="mobile-nav-list">
-          <li><a class="mobile-nav-link" href="/">Home</a></li>
-          <li><a class="mobile-nav-link" href="/about" >About</a></li>
-          <li><a class="mobile-nav-link" href="/blog">Blog</a></li>
-          <li><a class="mobile-nav-link" href="/todos">TODOs</a></li>
-          <li><a class="mobile-nav-link" href="/history">History</a></li>
-        </ul>
-      </div>
-    {/if}
-  </nav>
-</header>
-
 <section class="main-section">
+  <header class="header">
+    <nav aria-label="Global" class="nav-container">
+      <div class="nav-wrapper">
+        <!-- Mobile hamburger button -->
+        <button
+          class="mobile-menu-button sm:hidden"
+          onclick={toggleMobileMenu}
+          aria-expanded={mobileMenuOpen}
+          aria-label="Toggle navigation"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {#if mobileMenuOpen}
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            {:else}
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            {/if}
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-list">
+          <li><a class="nav-link" href="{base}/">Home</a></li>
+          <li><a class="nav-link" href="{base}/about">About</a></li>
+          <li><a class="nav-link" href="{base}/blog">Blog</a></li>
+          <li><a class="nav-link" href="{base}/todos">TODOs</a></li>
+          <li><a class="nav-link" href="{base}/history">History</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <ThemeToggle />
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      {#if mobileMenuOpen}
+        <div class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link" href="{base}/">Home</a></li>
+            <li><a class="mobile-nav-link" href="{base}/about" >About</a></li>
+            <li><a class="mobile-nav-link" href="{base}/blog">Blog</a></li>
+            <li><a class="mobile-nav-link" href="{base}/todos">TODOs</a></li>
+            <li><a class="mobile-nav-link" href="{base}/history">History</a></li>
+          </ul>
+        </div>
+      {/if}
+    </nav>
+  </header>
+
   <main class="flex-1">
     {@render children()}
   </main>
@@ -72,7 +73,7 @@
   </footer>
 </section>
 
-<style>
+<style lang="postcss">
   @reference '../app.css';
 
   .header {
@@ -126,7 +127,7 @@
   }
 
   .footer {
-    @apply bg-white border-t border-gray-200 mt-8;
+    @apply bg-white border-t border-gray-200;
   }
 
   .footer-content {

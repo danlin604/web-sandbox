@@ -3345,9 +3345,9 @@ function set(key, value, stringify = JSON.stringify) {
   } catch {
   }
 }
-const base = ((_a = globalThis.__sveltekit_ycj9bk) == null ? void 0 : _a.base) ?? "";
-const assets = ((_b = globalThis.__sveltekit_ycj9bk) == null ? void 0 : _b.assets) ?? base;
-const version = "1750206074265";
+const base = ((_a = globalThis.__sveltekit_cxiu4) == null ? void 0 : _a.base) ?? "/web-sandbox";
+const assets = ((_b = globalThis.__sveltekit_cxiu4) == null ? void 0 : _b.assets) ?? base;
+const version = "1750291753661";
 const SNAPSHOT_KEY = "sveltekit:snapshot";
 const SCROLL_KEY = "sveltekit:scroll";
 const STATES_KEY = "sveltekit:states";
@@ -5669,7 +5669,7 @@ function toggleTheme(_, darkMode) {
     document.documentElement.classList.remove("dark");
   }
 }
-var root_1$5 = /* @__PURE__ */ ns_template(`<svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>`);
+var root_1$7 = /* @__PURE__ */ ns_template(`<svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>`);
 var root_2$5 = /* @__PURE__ */ ns_template(`<svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>`);
 var root$i = /* @__PURE__ */ template(`<button class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300" aria-label="Toggle dark mode"><!></button>`);
 function ThemeToggle($$anchor, $$props) {
@@ -5683,7 +5683,7 @@ function ThemeToggle($$anchor, $$props) {
   var node = child(button);
   {
     var consequent = ($$anchor2) => {
-      var svg = root_1$5();
+      var svg = root_1$7();
       append($$anchor2, svg);
     };
     var alternate = ($$anchor2) => {
@@ -5703,14 +5703,14 @@ delegate(["click"]);
 function toggleMobileMenu(_, mobileMenuOpen) {
   set$1(mobileMenuOpen, !get$1(mobileMenuOpen));
 }
-var root_1$4 = /* @__PURE__ */ ns_template(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>`);
+var root_1$6 = /* @__PURE__ */ ns_template(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>`);
 var root_2$4 = /* @__PURE__ */ ns_template(`<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>`);
-var root_3$4 = /* @__PURE__ */ template(`<div class="mobile-nav svelte-1709l28"><ul class="mobile-nav-list svelte-1709l28"><li class="svelte-1709l28"><a class="mobile-nav-link svelte-1709l28" href="/">Home</a></li> <li class="svelte-1709l28"><a class="mobile-nav-link svelte-1709l28" href="/about">About</a></li> <li class="svelte-1709l28"><a class="mobile-nav-link svelte-1709l28" href="/blog">Blog</a></li> <li class="svelte-1709l28"><a class="mobile-nav-link svelte-1709l28" href="/todos">TODOs</a></li> <li class="svelte-1709l28"><a class="mobile-nav-link svelte-1709l28" href="/history">History</a></li></ul></div>`);
-var root$h = /* @__PURE__ */ template(`<header class="header svelte-1709l28"><nav aria-label="Global" class="nav-container svelte-1709l28"><div class="nav-wrapper svelte-1709l28"><button class="mobile-menu-button sm:hidden svelte-1709l28" aria-label="Toggle navigation"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><!></svg></button> <ul class="nav-list svelte-1709l28"><li><a class="nav-link svelte-1709l28" href="/">Home</a></li> <li><a class="nav-link svelte-1709l28" href="/about">About</a></li> <li><a class="nav-link svelte-1709l28" href="/blog">Blog</a></li> <li><a class="nav-link svelte-1709l28" href="/todos">TODOs</a></li> <li><a class="nav-link svelte-1709l28" href="/history">History</a></li></ul> <div class="theme-toggle-wrapper svelte-1709l28"><!></div></div> <!></nav></header> <section class="main-section svelte-1709l28"><main class="flex-1"><!></main> <footer class="footer svelte-1709l28"><div class="footer-content svelte-1709l28"><p class="footer-text svelte-1709l28">© 2025 Me</p></div></footer></section>`, 1);
+var root_3$4 = /* @__PURE__ */ template(`<div class="mobile-nav svelte-jobpn2"><ul class="mobile-nav-list svelte-jobpn2"><li class="svelte-jobpn2"><a class="mobile-nav-link svelte-jobpn2">Home</a></li> <li class="svelte-jobpn2"><a class="mobile-nav-link svelte-jobpn2">About</a></li> <li class="svelte-jobpn2"><a class="mobile-nav-link svelte-jobpn2">Blog</a></li> <li class="svelte-jobpn2"><a class="mobile-nav-link svelte-jobpn2">TODOs</a></li> <li class="svelte-jobpn2"><a class="mobile-nav-link svelte-jobpn2">History</a></li></ul></div>`);
+var root$h = /* @__PURE__ */ template(`<section class="main-section svelte-jobpn2"><header class="header svelte-jobpn2"><nav aria-label="Global" class="nav-container svelte-jobpn2"><div class="nav-wrapper svelte-jobpn2"><button class="mobile-menu-button sm:hidden svelte-jobpn2" aria-label="Toggle navigation"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><!></svg></button> <ul class="nav-list svelte-jobpn2"><li><a class="nav-link svelte-jobpn2">Home</a></li> <li><a class="nav-link svelte-jobpn2">About</a></li> <li><a class="nav-link svelte-jobpn2">Blog</a></li> <li><a class="nav-link svelte-jobpn2">TODOs</a></li> <li><a class="nav-link svelte-jobpn2">History</a></li></ul> <div class="theme-toggle-wrapper svelte-jobpn2"><!></div></div> <!></nav></header> <main class="flex-1"><!></main> <footer class="footer svelte-jobpn2"><div class="footer-content svelte-jobpn2"><p class="footer-text svelte-jobpn2">© 2025 Me</p></div></footer></section>`);
 function _layout($$anchor, $$props) {
   let mobileMenuOpen = /* @__PURE__ */ state(false);
-  var fragment = root$h();
-  var header = first_child(fragment);
+  var section = root$h();
+  var header = child(section);
   var nav = child(header);
   var div = child(nav);
   var button = child(div);
@@ -5719,7 +5719,7 @@ function _layout($$anchor, $$props) {
   var node = child(svg);
   {
     var consequent = ($$anchor2) => {
-      var path = root_1$4();
+      var path = root_1$6();
       append($$anchor2, path);
     };
     var alternate = ($$anchor2) => {
@@ -5733,7 +5733,29 @@ function _layout($$anchor, $$props) {
   }
   reset(svg);
   reset(button);
-  var div_1 = sibling(button, 4);
+  var ul = sibling(button, 2);
+  var li = child(ul);
+  var a = child(li);
+  set_attribute(a, "href", `${base ?? ""}/`);
+  reset(li);
+  var li_1 = sibling(li, 2);
+  var a_1 = child(li_1);
+  set_attribute(a_1, "href", `${base ?? ""}/about`);
+  reset(li_1);
+  var li_2 = sibling(li_1, 2);
+  var a_2 = child(li_2);
+  set_attribute(a_2, "href", `${base ?? ""}/blog`);
+  reset(li_2);
+  var li_3 = sibling(li_2, 2);
+  var a_3 = child(li_3);
+  set_attribute(a_3, "href", `${base ?? ""}/todos`);
+  reset(li_3);
+  var li_4 = sibling(li_3, 2);
+  var a_4 = child(li_4);
+  set_attribute(a_4, "href", `${base ?? ""}/history`);
+  reset(li_4);
+  reset(ul);
+  var div_1 = sibling(ul, 2);
   var node_1 = child(div_1);
   ThemeToggle(node_1, {});
   reset(div_1);
@@ -5742,6 +5764,29 @@ function _layout($$anchor, $$props) {
   {
     var consequent_1 = ($$anchor2) => {
       var div_2 = root_3$4();
+      var ul_1 = child(div_2);
+      var li_5 = child(ul_1);
+      var a_5 = child(li_5);
+      set_attribute(a_5, "href", `${base ?? ""}/`);
+      reset(li_5);
+      var li_6 = sibling(li_5, 2);
+      var a_6 = child(li_6);
+      set_attribute(a_6, "href", `${base ?? ""}/about`);
+      reset(li_6);
+      var li_7 = sibling(li_6, 2);
+      var a_7 = child(li_7);
+      set_attribute(a_7, "href", `${base ?? ""}/blog`);
+      reset(li_7);
+      var li_8 = sibling(li_7, 2);
+      var a_8 = child(li_8);
+      set_attribute(a_8, "href", `${base ?? ""}/todos`);
+      reset(li_8);
+      var li_9 = sibling(li_8, 2);
+      var a_9 = child(li_9);
+      set_attribute(a_9, "href", `${base ?? ""}/history`);
+      reset(li_9);
+      reset(ul_1);
+      reset(div_2);
       append($$anchor2, div_2);
     };
     if_block(node_2, ($$render) => {
@@ -5750,15 +5795,14 @@ function _layout($$anchor, $$props) {
   }
   reset(nav);
   reset(header);
-  var section = sibling(header, 2);
-  var main = child(section);
+  var main = sibling(header, 2);
   var node_3 = child(main);
   snippet(node_3, () => $$props.children);
   reset(main);
   next(2);
   reset(section);
   template_effect(() => set_attribute(button, "aria-expanded", get$1(mobileMenuOpen)));
-  append($$anchor, fragment);
+  append($$anchor, section);
 }
 delegate(["click"]);
 const _0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -5792,20 +5836,31 @@ const _1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   component: _error
 }, Symbol.toStringTag, { value: "Module" }));
-var root$f = /* @__PURE__ */ template(`<section><h1 class="p-8 text-4xl font-bold text-white">Home</h1></section>`);
+var root_1$5 = /* @__PURE__ */ template(`<meta name="description" content="A personal web development sandbox">`);
+var root$f = /* @__PURE__ */ template(`<div class="page-container svelte-1mutpfa"><h1 class="svelte-1mutpfa">Home</h1> <p class="svelte-1mutpfa">Some placeholder text.</p></div>`);
 function _page$9($$anchor) {
-  var section = root$f();
-  append($$anchor, section);
+  var div = root$f();
+  head(($$anchor2) => {
+    var meta = root_1$5();
+    $document.title = "Web Sandbox";
+    append($$anchor2, meta);
+  });
+  append($$anchor, div);
 }
 const _2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   component: _page$9
 }, Symbol.toStringTag, { value: "Module" }));
-var root$e = /* @__PURE__ */ template(`<h1>About</h1> <p>TODO...</p> <a href="/">Home</a>`, 1);
+var root_1$4 = /* @__PURE__ */ template(`<meta name="description" content="About this web development sandbox">`);
+var root$e = /* @__PURE__ */ template(`<div class="page-container svelte-1c86bmt"><h1 class="svelte-1c86bmt">About</h1> <p class="svelte-1c86bmt">Some placeholder text.</p></div>`);
 function _page$8($$anchor) {
-  var fragment = root$e();
-  next(4);
-  append($$anchor, fragment);
+  var div = root$e();
+  head(($$anchor2) => {
+    var meta = root_1$4();
+    $document.title = "About - Web Sandbox";
+    append($$anchor2, meta);
+  });
+  append($$anchor, div);
 }
 const _3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
@@ -5928,11 +5983,11 @@ function _page$6($$anchor, $$props) {
         reset(article);
         template_effect(
           ($0) => {
-            set_attribute(a, "href", `/blog/${get$1(post).slug ?? ""}`);
+            set_attribute(a, "href", `${base ?? ""}/blog/${get$1(post).slug ?? ""}`);
             set_text(text_1, get$1(post).title);
             set_text(text_2, $0);
             set_text(text_4, get$1(post).excerpt);
-            set_attribute(a_1, "href", `/blog/${get$1(post).slug ?? ""}`);
+            set_attribute(a_1, "href", `${base ?? ""}/blog/${get$1(post).slug ?? ""}`);
             set_attribute(a_1, "aria-label", `Read complete article: ${get$1(post).title ?? ""}`);
           },
           [
@@ -6881,4 +6936,4 @@ export {
   _page$1 as t,
   _page as u
 };
-//# sourceMappingURL=start.D51zW5-5.js.map
+//# sourceMappingURL=start.BkNdIryU.js.map
